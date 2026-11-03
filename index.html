@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ionian Pine</title>
+<meta name="description" content="Ionian Pine is an entrepreneur-led investment firm. We buy and build profitable, founder-owned service businesses, working alongside the owners who built them.">
+<link rel="canonical" href="https://ionianpinepartners.com/">
+<link rel="icon" type="image/png" href="/img/favicon-main.png">
+<meta property="og:title" content="Ionian Pine">
+<meta property="og:description" content="Ionian Pine is an entrepreneur-led investment firm. We buy and build profitable, founder-owned service businesses, working alongside the owners who built them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ionianpinepartners.com/">
+<meta property="og:image" content="https://ionianpinepartners.com/img/hero-pines-poster.webp">
+<meta name="theme-color" content="#1d3557">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-media" aria-hidden="true">
+    <img class="still" src="img/hero-pines-poster.webp" alt="" width="1600" height="1066" fetchpriority="high">
+    <video autoplay muted loop playsinline preload="auto" poster="img/hero-pines-poster.webp">
+      <source src="img/hero-pines.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap">
+    <header class="hero-top">
+      <a class="brand" href="/" aria-label="Ionian Pine home"><img src="img/logo-main-white.png" alt="Ionian Pine" width="947" height="814"></a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </header>
+    <div class="hero-inner">
+      <h1>We partner with owners to build what comes next.</h1>
+      <p class="lede">Ionian Pine is an entrepreneur-led investment firm. We buy and build profitable, founder-owned service businesses, working alongside the owners who built them.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#contact">Contact</a>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Get in touch</p>
+      <h2>Get in touch.</h2>
+      <p class="lede">Tell us a little about your business and we will reply personally.</p>
+      <div class="direct">
+        <p><strong>Elena Arida</strong><a href="mailto:elena.arida@ionianpinepartners.com">elena.arida@ionianpinepartners.com</a><br><a href="tel:+19085140530">(908) 514-0530</a></p>
+        <p><strong>Korey Mui, CFA</strong><a href="mailto:korey.mui@ionianpinepartners.com">korey.mui@ionianpinepartners.com</a><br><a href="tel:+16176780396">(617) 678-0396</a></p>
+      </div>
+    </div>
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="027a832e-2c94-4c78-b34c-eb8be9329517">
+      <input type="hidden" name="subject" value="New enquiry from ionianpinepartners.com">
+      <input type="hidden" name="from_name" value="Ionian Pine website">
+      <input type="hidden" name="ccemail" value="korey.mui@ionianpinepartners.com">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="f2">
+        <label>First name<input type="text" name="first_name" autocomplete="given-name" required></label>
+        <label>Last name<input type="text" name="last_name" autocomplete="family-name" required></label>
+      </div>
+      <div class="f2">
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Company<input type="text" name="company" autocomplete="organization"></label>
+      </div>
+      <label>Message<textarea name="message" required placeholder="A few lines about your business and what you are thinking about."></textarea></label>
+      <div>
+        <button class="btn" type="submit">Send message</button>
+      </div>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap">
+    <div>&copy; 2026 Ionian Pine. All rights reserved.</div>
+  </div>
+</footer>
+<script src="js/form.js" defer></script>
+<script>
+  (function(){
+    var v=document.querySelector('.hero-media video');if(!v)return;
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){v.remove();return;}
+    v.muted=true;v.defaultMuted=true;v.setAttribute('muted','');v.playsInline=true;
+    var started=false;
+    v.addEventListener('playing',function(){started=true;v.classList.add('is-playing');});
+    v.addEventListener('error',function(){v.remove();});
+    function attempt(){var p=v.play();if(p&&p.catch){p.catch(function(){});}}
+    attempt();
+    ['touchstart','click','scroll','keydown'].forEach(function(ev){window.addEventListener(ev,function once(){window.removeEventListener(ev,once);if(!started)attempt();},{passive:true});});
+  })();
+</script>
+</body>
+</html>
